@@ -14,12 +14,13 @@ const Discover = () => {
     if(error) return <Error />
 
     return(
+        
     <div className='flex flex-col'>
 
         {/* Discover title and filter */}
         <div className='w-full flex justify-between items-center sm:flex-row flex-col mt-4 mb-10'>
             <h2 className='font-bold text-3xl text-white text-left'>Discover {genreTitle}</h2>
-            <select onChange={()=>{}} value="" className='bg-black text-gray-300 p-3 text-sm rounded-lg outline-none sm:mt-0 mt-5'>
+            <select onChange={()=>{}} value="" className='bg-black text-gray-300 p-3 text-sm rounded-lg outline-none sm:mt-0 mt-5 xl:mr-[90px]'>
                 {genres.map((genre) => <option key={genre.value} value={genre.value}>{genre.title}</option>)}
             </select>
         </div>
